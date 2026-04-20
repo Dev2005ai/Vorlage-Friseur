@@ -21,6 +21,11 @@
 .env.test.local
 .env.production.local
 
+# Claude Code / Skills (local tool config)
+.claude/
+.agents/
+skills-lock.json
+
 # misc
 .DS_Store
 *.pem
