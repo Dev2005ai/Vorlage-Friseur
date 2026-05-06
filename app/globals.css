@@ -111,3 +111,24 @@ body {
   }
   html { scroll-behavior: auto; }
 }
+
+/* ── Mobile optimizations ── */
+@media (max-width: 640px) {
+  /* Prevent iOS font zoom on inputs */
+  input, select, textarea { font-size: 1rem !important; }
+
+  /* Minimum touch targets 44px */
+  button, a { min-height: 44px; }
+
+  /* Prevent horizontal scroll */
+  body { overflow-x: hidden; }
+
+  /* Section spacing */
+  section { padding-block: 4rem !important; }
+}
+
+@media (max-width: 480px) {
+  /* Tighter container padding */
+  .px-4 { padding-inline: 1rem !important; }
+  .px-6 { padding-inline: 1.1rem !important; }
+}
